@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+
+</head>
+
+<body  ng-app="EMS" ng-controller="appController">
+ <div class="container" style="background-image:url(https://png.pngtree.com/thumb_back/fh260/back_pic/02/68/42/5957908fe6d9740.jpg);padding-bottom: 50px; " >
+	<script src="app.js"></script>
+	<script src="appresourse.js"></script>
+	<script src="appcontroller.js"></script>
+	<script src="dashboard/dashboardmodel.js"></script>
+	<script src="dashboard/dashboardcontroller.js"></script>
+	<script src="employee/employeemodel.js"></script>
+	<script src="employee/employeecontroller.js"></script>
+
+	  <style type="text/css"> .btn:hover{background:red;}</style>
+         
+ 		   <div class="row" >
+
+            <div class="col-sm-1 col-md-1" style="padding-top: 20px">
+                 <button type="button" class="btn btn-info"   ng-click="chbtn3()"><a href="#!dashboard"  style="color:white">Dashboad</a></button>	
+
+
+                
+                </div>
+                 <div class="col-sm-1 col-md-1" style="padding-top: 20px" >	 
+ 			 	<button type="button" class="btn btn-success "   ng-click="chbtn1()"><a href="#!profile" style="color:white" >Employee</a></button>
+ 		  </div>
+ 		   <div class="col-sm-9 col-md-9" >
+ 		   	
+ 		   	<div ng-view> </div>
+
+ 		   </div>
+ 		</div>
+ </div>  
+  
+	
+
+
+	
+
+</body>
+</html>
